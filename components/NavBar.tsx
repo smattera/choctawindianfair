@@ -2,7 +2,6 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import cifShortLogo from "@/public/img/cifLogoShort.png";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -134,10 +133,11 @@ export default function NavBar() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-                src={cifShortLogo}
+                src={'/img/cifLogoShort.png'}
                 alt="Choctaw Indian Fair"
-                height={48}
                 width={48}
+                height={48}
+                priority
               />
             </a>
           </div>

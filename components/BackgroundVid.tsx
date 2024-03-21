@@ -35,9 +35,11 @@ export default function BackgroundVid() {
     if (currentVideoElement) {
       currentVideoElement.src = videos[currentVideoIndex];
       currentVideoElement.load();
-      currentVideoElement.play().catch((error) => {
-        // Handle error
-        console.error("Error playing video:", error);
+      currentVideoElement.addEventListener("loadeddata", () => {
+        currentVideoElement.play().catch((error) => {
+          // Handle error
+          console.error("Error playing video:", error);
+        });
       });
     }
   }, [currentVideoIndex]);

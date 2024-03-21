@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ChiefPrincess from "@/public/img/chiefprincess.webp";
 
 export default function Feature() {
   return (
@@ -8,9 +7,8 @@ export default function Feature() {
         <div className="flex flex-col items-center xl:flex-row">
           <div className="xl:w-1/2">
             <Image
-              src={ChiefPrincess}
+              src={'/img/chiefprincess.webp'}
               alt="Chief & Princess"
-              layout="responsive"
               width={600}
               height={600}
               className="rounded-lg shadow-xl ring-1 ring-gray-400/10"
