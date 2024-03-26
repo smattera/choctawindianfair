@@ -1,3 +1,4 @@
+"use client";
 import React, { Suspense, useEffect } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
