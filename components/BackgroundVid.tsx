@@ -88,14 +88,17 @@ export default function BackgroundVid() {
       </video>
       <div
         key={currentVideoIndex}
-        className="absolute bottom-0 left-0 right-0 flex h-2/5 flex-col items-center justify-center bg-gradient-to-b from-transparent via-background to-background p-4 pt-48 text-foreground"
+        className="absolute bottom-0 left-0 right-0 flex h-2/5 flex-col items-center justify-center bg-gradient-to-b from-transparent via-background to-background p-4 pt-48 text-center text-foreground"
       >
         <h2 className="mb-4 animate-fade-in text-2xl">
           {videos[currentVideoIndex].statement}
         </h2>
-        <Button className="animate-fade-in" variant="outline">
-          <LinkIcon className="mr-2 h-4 w-4" />
+        <Button
+          variant="outline"
+          className="mb-4 animate-fade-in bg-foreground text-background"
+        >
           {videos[currentVideoIndex].buttonText}
+          <LinkIcon className="ml-2 h-4 w-4" />
         </Button>
       </div>
     </div>
