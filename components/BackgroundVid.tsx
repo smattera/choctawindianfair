@@ -88,7 +88,7 @@ export default function BackgroundVid() {
       </video>
       <div
         key={currentVideoIndex}
-        className="absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-center bg-gradient-to-b from-transparent via-background to-background p-4 pt-48 text-center text-foreground"
+        className="absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-center bg-gradient-to-b from-transparent via-background to-red-100 p-4 pt-48 text-center text-foreground dark:to-red-950"
       >
         <h2 className="mb-4 animate-fade-in text-2xl sm:mb-6 sm:text-3xl">
           {videos[currentVideoIndex].statement}
