@@ -14,7 +14,7 @@ export default function DiamondBorder() {
         <div className="h-1.5 w-full bg-[#c4b166]" />
         <div className="h-1 w-full bg-black" />
         <div className="h-10 w-full bg-[#38363c]">
-          <div className="bg-diamond-dark h-10 w-full" />
+          <div className="h-10 w-full bg-[url('/img/svg/diamond-dark.svg')]" />
         </div>
         <div className="h-1 w-full bg-black" />
         <div className="h-1.5 w-full bg-[#c09c2f]" />
