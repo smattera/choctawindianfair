@@ -7,17 +7,18 @@ export default function Feature() {
         <div className="flex flex-col items-center xl:flex-row">
           <div className="xl:w-1/2">
             <Image
-              src={'/img/chiefprincess.webp'}
+              src={"/img/chiefprincess.webp"}
               alt="Chief & Princess"
               width={600}
               height={600}
+              layout="responsive"
               className="rounded-lg shadow-xl ring-1 ring-gray-400/10"
             />
           </div>
           <div className="pt-12 xl:w-1/2 xl:pl-8 xl:pt-0">
             <div className="text-center">
               <h2 className="text-5xl font-bold">Halito!</h2>
-              <p className="text-foreground/80 mt-6 text-lg">
+              <p className="mt-6 text-lg text-foreground/80">
                 Greetings from the Choctaw Indian Reservation. We invite you to
                 join us July 12-15 for our 73rd annual Choctaw Indian Fair. The
                 fair takes place on our centuries-old homeland in beautiful
@@ -28,7 +29,7 @@ export default function Feature() {
               <p className="my-8 text-4xl font-bold">
                 “The Choctaw Spirit Lives On”
               </p>
-              <p className="text-foreground/80 mt-6 text-lg">
+              <p className="mt-6 text-lg text-foreground/80">
                 Fairgoers will experience the magnificent journey of our people
                 through historical and cultural displays, social dancing, tribal
                 arts & crafts, Choctaw stickball – the granddaddy of all field
