@@ -1,5 +1,4 @@
-"use client";
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
@@ -28,18 +27,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Clean up resources when the page is hidden
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === "hidden") {
-        // Clean up resources
-      }
-    };
-    window.addEventListener("visibilitychange", handleVisibilityChange);
-    return () => {
-      window.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
