@@ -9,9 +9,9 @@
 	.st3{fill:#DFCD97;}
 	.st4{fill:#CECC8B;}
 </style>
-<rect class="st0" width="24" height="30"/>
-<rect y="6" class="st1" width="24" height="18"/>
-<rect y="1.8" class="st2" width="24" height="2.5"/>
-<rect y="25.8" class="st3" width="24" height="2.5"/>
-<polygon class="st4" points="12,7.5 23,15 12,22.5 1,15 "/>
+<rect x="-0.5" class="st0" width="25" height="30"/>
+<rect x="-0.5" y="6" class="st1" width="25" height="18"/>
+<rect x="-0.5" y="1.8" class="st2" width="25" height="2.5"/>
+<rect x="-0.5" y="25.8" class="st3" width="25" height="2.5"/>
+<polygon class="st4" points="12,7.5 23.5,15 12,22.5 0.5,15 "/>
 </svg>

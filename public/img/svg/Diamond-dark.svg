@@ -6,11 +6,11 @@
 	.st0{fill:#38363C;}
 	.st1{fill:#C4B166;}
 	.st2{fill:#C09C2F;}
-	.st3{opacity:0.75;fill:#92864F;}
+	.st3{opacity:0.75;fill:#92864F;enable-background:new    ;}
 </style>
-<rect width="24" height="30"/>
-<rect y="6" class="st0" width="24" height="18"/>
-<rect y="1.8" class="st1" width="24" height="2.5"/>
-<rect y="25.8" class="st2" width="24" height="2.5"/>
-<polygon class="st3" points="12,7.5 23,15 12,22.5 1,15 "/>
+<rect x="-0.5" width="25" height="30"/>
+<rect x="-0.5" y="6" class="st0" width="25" height="18"/>
+<rect x="-0.5" y="1.8" class="st1" width="25" height="2.5"/>
+<rect x="-0.5" y="25.8" class="st2" width="25" height="2.5"/>
+<polygon class="st3" points="12,7.5 23.5,15 12,22.5 0.5,15 "/>
 </svg>
