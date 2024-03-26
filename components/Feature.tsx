@@ -11,7 +11,6 @@ export default function Feature() {
               alt="Chief & Princess"
               width={600}
               height={600}
-              layout="responsive"
               className="rounded-lg shadow-xl ring-1 ring-gray-400/10"
             />
           </div>

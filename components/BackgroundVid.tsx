@@ -76,13 +76,13 @@ export default function BackgroundVid() {
   }, [currentVideoIndex]);
 
   return (
-    <div className="relative h-[60vh] w-full overflow-hidden bg-black sm:h-[75vh]">
+    <div className="relative h-[65vh] w-full overflow-hidden bg-black sm:h-[80vh]">
       <video
         autoPlay
         muted
         playsInline
         ref={videoRef}
-        className="h-full w-auto object-cover"
+        className="h-full min-w-full object-cover"
       >
         <source src={videos[currentVideoIndex].url} type="video/mp4" />
       </video>
@@ -90,7 +90,7 @@ export default function BackgroundVid() {
         key={currentVideoIndex}
         className="absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-center bg-gradient-to-b from-transparent via-background to-background p-4 pt-48 text-center text-foreground"
       >
-        <h2 className="mb-4 animate-fade-in text-2xl">
+        <h2 className="mb-4 animate-fade-in text-2xl sm:mb-6 sm:text-3xl">
           {videos[currentVideoIndex].statement}
         </h2>
         <Button

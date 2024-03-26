@@ -123,7 +123,7 @@ export default function NavBar() {
   }
 
   return (
-    <header className="bg-background">
+    <header className="bg-gradient-to-b from-background from-60% to-red-100 to-100% dark:to-red-950">
       <Drawer direction="right">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -133,7 +133,7 @@ export default function NavBar() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-                src={'/img/cifLogoShort.png'}
+                src={"/img/cifLogoShort.png"}
                 alt="Choctaw Indian Fair"
                 width={48}
                 height={48}
@@ -160,14 +160,14 @@ export default function NavBar() {
                     <li className="row-span-3">
                       <NavigationMenuLink asChild>
                         <a
-                          className="from-muted/50 to-muted flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                           href="/"
                         >
                           <MousePointerClickIcon className="h-6 w-6" />
                           <div className="mb-2 mt-4 text-lg font-medium">
                             shadcn/ui
                           </div>
-                          <p className="text-muted-foreground text-sm leading-tight">
+                          <p className="text-sm leading-tight text-muted-foreground">
                             Beautifully designed components built with Radix UI
                             and Tailwind CSS.
                           </p>
@@ -252,8 +252,8 @@ export default function NavBar() {
         </nav>
 
         <DrawerOverlay className="fixed inset-0 bg-black bg-opacity-50" />
-        <DrawerContent className="bg-background fixed bottom-0 left-auto right-0 mt-24 flex h-full w-[400px] flex-col rounded-t-[10px]">
-          <div className="bg-background h-full flex-1 p-4">
+        <DrawerContent className="fixed bottom-0 left-auto right-0 mt-24 flex h-full w-[400px] flex-col rounded-t-[10px] bg-background">
+          <div className="h-full flex-1 bg-background p-4">
             <div className="mx-auto max-w-md">
               <DrawerHeader>
                 <DrawerTitle className="mb-4 font-medium">
@@ -281,13 +281,13 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className,
           )}
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
         </a>
