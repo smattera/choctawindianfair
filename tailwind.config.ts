@@ -21,6 +21,8 @@ const config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "diamond-dark": "url('/img/svg/diamond-dark.svg')",
+        "diamond-light": "url('/img/svg/diamond-light.svg')",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
