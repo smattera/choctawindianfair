@@ -76,7 +76,7 @@ export default function BackgroundVid() {
   }, [currentVideoIndex]);
 
   return (
-    <div className="relative h-3/4 w-full overflow-hidden bg-black sm:h-2/3">
+    <div className="relative h-svh w-full overflow-hidden bg-black">
       <video
         autoPlay
         muted
