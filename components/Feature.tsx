@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Feature() {
   return (
-    <div className="overflow-hidden py-24 sm:py-32">
+    <div className="bg-gradient-radial overflow-hidden from-red-100 to-red-300 py-24 dark:from-red-600 dark:to-red-950 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 xl:px-8">
         <div className="flex flex-col items-center xl:flex-row">
           <div className="xl:w-1/2">
