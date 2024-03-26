@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
@@ -5,6 +6,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
+
+const SponsorCarousel = React.lazy(
+  () => import("@/components/SponsorCarousel"),
+);
+const Footer = React.lazy(() => import("@/components/Footer"));
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,7 +32,7 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "bg-background antialised min-h-screen font-sans",
+          "antialised min-h-screen bg-background font-sans",
           fontSans.variable,
         )}
       >
@@ -38,6 +44,10 @@ export default function RootLayout({
         >
           <NavBar />
           {children}
+          <Suspense fallback={<div>Loading...</div>}>
+            <SponsorCarousel />
+            <Footer />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
