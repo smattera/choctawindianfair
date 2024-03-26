@@ -1,6 +1,8 @@
+import React, { Suspense } from "react";
 import BackgroundVid from "@/components/BackgroundVid";
-import Feature from "@/components/Feature";
-import Pricing from "@/components/Pricing";
+
+const Feature = React.lazy(() => import("@/components/Feature"));
+const Pricing = React.lazy(() => import("@/components/Pricing"));
 
 export default function Home() {
   return (
