@@ -10,6 +10,10 @@ export default function Pricing() {
             Ticket Prices
           </p>
         </div>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600 dark:text-gray-400">
+          Choose an affordable plan that's packed with the best features for
+          engaging your audience, creating customer loyalty, and driving sales.
+        </p>
       </div>
     </div>
   );

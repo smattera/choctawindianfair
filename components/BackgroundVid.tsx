@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
+import { ChevronDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link as LinkIcon } from "lucide-react";
 import DiamondBorder from "./DiamondBorder";
@@ -90,16 +91,17 @@ export default function BackgroundVid() {
         key={currentVideoIndex}
         className="absolute bottom-0 left-0 right-0 flex h-[30vh] flex-col items-center justify-end bg-gradient-to-b from-transparent via-background to-red-100 pb-6 text-center text-foreground dark:to-red-950"
       >
-        <h2 className="mb-4 animate-fade-in text-2xl sm:mb-6 sm:text-3xl">
+        <h2 className="mb-4 animate-fade-in text-2xl sm:mb-6 sm:text-4xl">
           {videos[currentVideoIndex].statement}
         </h2>
-        <Button
+        {/* <Button
           variant="outline"
-          className="mb-4 animate-fade-in bg-foreground text-background"
+          className="mb-4 animate-fade-in outline-none ring-2 ring-ring ring-offset-2"
         >
           {videos[currentVideoIndex].buttonText}
           <LinkIcon className="ml-2 h-4 w-4" />
-        </Button>
+        </Button> */}
+        <ChevronDownIcon className="h-6 w-6 animate-bounce text-foreground" />
       </div>
     </div>
   );

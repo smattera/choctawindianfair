@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Feature() {
   return (
-    <div className="bg-gradient-radial overflow-hidden from-red-100 to-red-300 py-24 dark:from-red-600 dark:to-red-950 sm:py-32">
+    <div className="overflow-hidden pt-6 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 xl:px-8">
         <div className="flex flex-col items-center xl:flex-row">
           <div className="xl:w-1/2">
@@ -17,7 +17,7 @@ export default function Feature() {
           <div className="pt-12 xl:w-1/2 xl:pl-8 xl:pt-0">
             <div className="text-center">
               <h2 className="text-5xl font-bold">Halito!</h2>
-              <p className="mt-6 text-lg text-foreground/80">
+              <p className="mt-6 text-lg text-gray-600 dark:text-gray-400">
                 Greetings from the Choctaw Indian Reservation. We invite you to
                 join us July 12-15 for our 73rd annual Choctaw Indian Fair. The
                 fair takes place on our centuries-old homeland in beautiful
@@ -28,7 +28,7 @@ export default function Feature() {
               <p className="my-8 text-4xl font-bold">
                 “The Choctaw Spirit Lives On”
               </p>
-              <p className="mt-6 text-lg text-foreground/80">
+              <p className="mt-6 text-lg text-gray-600 dark:text-gray-400">
                 Fairgoers will experience the magnificent journey of our people
                 through historical and cultural displays, social dancing, tribal
                 arts & crafts, Choctaw stickball – the granddaddy of all field
