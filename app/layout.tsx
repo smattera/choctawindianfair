@@ -6,8 +6,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
-import SponsorCarousel from "@/components/SponsorCarousel";
-import Footer from "@/components/Footer";
+const SponsorCarousel = React.lazy(
+  () => import("@/components/SponsorCarousel"),
+);
+const Footer = React.lazy(() => import("@/components/Footer"));
 
 const fontSans = FontSans({
   subsets: ["latin"],
